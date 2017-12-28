@@ -1,0 +1,29 @@
+{
+  "server":{
+    "host": "localhost",
+    "port": 3000
+  },
+  "service": {
+    "socketioServer": {
+      "host": "localhost",
+      "port": 3131
+    },
+    "spacebro":{
+      "host": "localhost",
+      "port": 36000,
+      "channelName": "media-stream",
+      "client": {
+        "name": "spacebro-bridge",
+        "description": "An app to connect a socket.io server to spacebro",
+				"out": {
+					"outMessage": {
+						"eventName": "outMessage",
+						"description": "Output message, received from mandrill",
+						"type": "all"
+					}
+        }
+      },
+      "connection": "socialite-app/media::find => spacebro-bridge/media::find"
+    }
+  }
+}

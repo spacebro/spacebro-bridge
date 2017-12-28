@@ -1,0 +1,16 @@
+{
+  "name": "spacebro-bridge",
+  "version": "1.0.0",
+  "description": "An app to connect a socket.io server to spacebro",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emmanuel Geoffray",
+  "license": "ISC",
+  "dependencies": {
+    "spacebro-client": "^0.4.3",
+    "standard-settings": "^1.1.10"
+  }
+}
