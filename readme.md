@@ -4,9 +4,11 @@ An app to connect a socket.io server to spacebro
 ## ❓Why ?
 
 We love to use spacebro to connect multiple apps together.  
-Sometimes, we want to use some apps outside of the spacebro galaxy.  
-It is now pretty easy to do so if the app already implements socket.io
-server.  
+Sometimes, we want to use an app written outside of the spacebro galaxy.  
+When faced whit this, there is two path you can use: 
+* the long path: fork the foreign app and implement `spacebro-client` inside.
+* the galaxy shortcut: `spacebro-bridge`
+
 spacebro-bridge will connect to the foreign socket.io server, connect to
 spacebro, and forward all messages back and forth between the two.  
 Socket.io acknowledgments are working too!
